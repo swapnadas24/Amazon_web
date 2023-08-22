@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.amazon.web.util.TestUtil;
 
@@ -29,7 +28,7 @@ public class Amazonbase {
             // Load the properties File
             props = new Properties();
             FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+
-                                 "/src/main/java/com/interview/config/config.properties");
+                                 "/src/main/java/com/amazon/web/config/config.properties");
             props.load(objfile);
 
         } catch (FileNotFoundException e) {
@@ -39,7 +38,7 @@ public class Amazonbase {
         }
 
     }
-
+ 
     public static void intialization() throws IOException {
 
         String browserName= props.getProperty("browser");
@@ -53,12 +52,7 @@ public class Amazonbase {
         option.setExperimentalOption("useAutomationExtension", false);
         driver = new ChromeDriver(option);
 
-        }else if(browserName.equals("FF"))
-        {
-         WebDriverManager.safaridriver().setup();
-         driver=new FirefoxDriver();
         }
-       
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
@@ -67,3 +61,4 @@ public class Amazonbase {
     }
     
 }
+

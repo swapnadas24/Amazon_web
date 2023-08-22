@@ -26,13 +26,11 @@ public class SearchItem extends Amazonbase{
         PageFactory.initElements(driver,this);
     }
 
-    public SearchItem SearchSamsungMobile(String SearchMob)
+    public AddToCart SearchSamsungMobile(String SearchMob)
     {
 
-        search_Bar.click();
         search_Bar.sendKeys(SearchMob);
-        
-        Searchlist_size.click();
+        Searchlist_size.isSelected();
 
         // select First name from the list
 		List<WebElement> mobile = Samsung_mobile;
@@ -40,7 +38,7 @@ public class SearchItem extends Amazonbase{
 			mobile.get(i).click();
 			break;
 		}
-      return new SearchItem();
+      return new AddToCart();
 
     }
 }

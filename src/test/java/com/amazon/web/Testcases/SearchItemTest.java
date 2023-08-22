@@ -28,11 +28,13 @@ public class SearchItemTest extends Amazonbase{
     public void searchedItemTest()
     {
       search_item.SearchSamsungMobile(props.getProperty("SearchMobile"));
+      
     }
 
     @AfterMethod
-    public void quitScreen(){
-      // driver.quit();
+    public void quitScreen()
+    {
+       driver.quit();
     }    
 
 }
