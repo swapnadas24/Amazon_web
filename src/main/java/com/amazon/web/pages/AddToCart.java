@@ -44,6 +44,6 @@ public class AddToCart extends Amazonbase {
         click_addToCart.click();
         Thread.sleep(2000);
         click_Cart.click();  
-        Thread.sleep(5000);     
+        Thread.sleep(3000);    
     }
 }
