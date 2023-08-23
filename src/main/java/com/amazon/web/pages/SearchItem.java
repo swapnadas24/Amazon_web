@@ -10,7 +10,7 @@ import com.amazon.web.base.Amazonbase;
 
 public class SearchItem extends Amazonbase{
 
-    
+    //Page Factory -OR:
     @FindBy(id = "twotabsearchtextbox")
     WebElement search_Bar;
     
@@ -19,11 +19,25 @@ public class SearchItem extends Amazonbase{
 
     @FindBy(xpath="//div[@aria-label='samsung mobile']")
     List<WebElement> Samsung_mobile;
+    
+    @FindBy(id="nav-logo-sprites")
+    WebElement AmazonLogo;
 
-
+    //initialize the page objects:
     public SearchItem()
     {
         PageFactory.initElements(driver,this);
+    }
+
+    //Actions
+    public String validatePageTitle()
+    {
+      return driver.getTitle();
+    }
+
+    public boolean validateAmazonLogo()
+    {
+        return AmazonLogo.isDisplayed();
     }
 
     public AddToCart SearchSamsungMobile(String SearchMob)
