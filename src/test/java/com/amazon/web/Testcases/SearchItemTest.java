@@ -14,8 +14,7 @@ public class SearchItemTest extends Amazonbase{
    
     SearchItem search_item;
     AddToCart  add_To_cart;
-
-
+ 
     public SearchItemTest()
     {
        super();
@@ -27,12 +26,12 @@ public class SearchItemTest extends Amazonbase{
       intialization();
       search_item = new SearchItem();
     }
-
+    
     @Test(priority = 1)
     public void pageTitleTest()
     {
-       String page_title = search_item.validatePageTitle();
-       Assert.assertEquals(page_title,"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+       String home_page_title = search_item.validateHomePageTitle();
+       Assert.assertEquals(home_page_title,"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
     }
 
     @Test(priority=2)
@@ -45,6 +44,7 @@ public class SearchItemTest extends Amazonbase{
     @Test(priority = 3)
     public void searchedItemTest()
     {
+      
       add_To_cart= search_item.SearchSamsungMobile(props.getProperty("SearchMobile"));
       
     }

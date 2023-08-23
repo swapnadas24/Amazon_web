@@ -9,13 +9,13 @@ import com.amazon.web.base.Amazonbase;
 public class AddToCart extends Amazonbase {
 
     //Page Factory - OR:
-    @FindBy(xpath = "//img[@data-image-index='1']")
+    @FindBy(xpath = "//img[@class='s-image']")
     WebElement first_Mobile;  
 
-    @FindBy(id="add-to-cart-button")
+    @FindBy(xpath="//input[@id='add-to-cart-button']")
     WebElement click_addToCart;
     
-    @FindBy(id="attach-sidesheet-view-cart-button-announce")
+    @FindBy(id="attach-view-cart-button-form") 
     WebElement click_Cart;
     
     //initialize the page objects:
@@ -28,7 +28,6 @@ public class AddToCart extends Amazonbase {
     public void clickMobile()
     {
         first_Mobile.click();
-
         String parentHandle=driver.getWindowHandle();
         for(String childHandle: driver.getWindowHandles())
         {
@@ -39,21 +38,12 @@ public class AddToCart extends Amazonbase {
         }
     }
 
-    public String validateMobilePageTitle()
+    public void addItemTocart() throws InterruptedException
     {
-       return driver.getTitle();
-    }
 
-    public void addItemTocart()
-    {
         click_addToCart.click();
-        
+        Thread.sleep(2000);
+        click_Cart.click();  
+        Thread.sleep(5000);     
     }
-    public void clickTocart()
-    {
-        click_Cart.click();
-    }
-
-    
-
 }

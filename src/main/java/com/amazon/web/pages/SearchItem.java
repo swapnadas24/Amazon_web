@@ -1,12 +1,14 @@
 package com.amazon.web.pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.web.base.Amazonbase;
+import com.amazon.web.util.TestUtil;
 
 public class SearchItem extends Amazonbase{
 
@@ -30,7 +32,7 @@ public class SearchItem extends Amazonbase{
     }
 
     //Actions
-    public String validatePageTitle()
+    public String validateHomePageTitle()
     {
       return driver.getTitle();
     }
@@ -45,6 +47,7 @@ public class SearchItem extends Amazonbase{
 
         search_Bar.sendKeys(SearchMob);
         Searchlist_size.isSelected();
+        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
 
         // select First name from the list
 		List<WebElement> mobile = Samsung_mobile;

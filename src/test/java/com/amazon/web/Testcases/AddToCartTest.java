@@ -8,7 +8,9 @@ import org.testng.annotations.Test;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.AddToCart;
+
 import com.amazon.web.pages.SearchItem;
+
 
 public class AddToCartTest extends Amazonbase {
 
@@ -29,12 +31,10 @@ public class AddToCartTest extends Amazonbase {
     }
 
     @Test()
-    public void click_Mobile()
+    public void click_Mobile() throws InterruptedException
     { 
         add_To_cart.clickMobile();
-        add_To_cart.validateMobilePageTitle();
-        add_To_cart.addItemTocart();
-        add_To_cart.clickTocart();
+        add_To_cart.addItemTocart();     
     }
 
     @AfterMethod
