@@ -23,17 +23,16 @@ public class Amazonbase {
     public static Properties props;
     public static FileInputStream objfile;
 
-    public  static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+    public static EventFiringWebDriver listnerDriver;
+    public static WebEventListener eventListener;
 
-    public Amazonbase() 
-    {
+    public Amazonbase() {
 
         try {
             // Load the properties File
             props = new Properties();
-            FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+
-                                 "/src/main/java/com/amazon/web/config/config.properties");
+            FileInputStream objfile = new FileInputStream(System.getProperty("user.dir") +
+                    "/src/main/java/com/amazon/web/config/config.properties");
             props.load(objfile);
 
         } catch (FileNotFoundException e) {
@@ -43,35 +42,33 @@ public class Amazonbase {
         }
 
     }
- 
+
     public static void intialization() throws IOException {
 
-        String browserName= props.getProperty("browser");
+        String browserName = props.getProperty("browser");
 
-        if(browserName.equals("chrome"))
-        {
-        WebDriverManager.chromedriver().setup();
-		option = new ChromeOptions();
-        // To stop unwanted pop-up of chrome browser
-        option.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        option.setExperimentalOption("useAutomationExtension", false);
-        driver = new ChromeDriver(option);
+        if (browserName.equals("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            option = new ChromeOptions();
+            // To stop unwanted pop-up of chrome browser
+            option.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+            option.setExperimentalOption("useAutomationExtension", false);
+            driver = new ChromeDriver(option);
 
         }
-         
-        e_driver = new EventFiringWebDriver(driver);
-		// Now create object of EventListerHandler to register it with EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
 
+        listnerDriver = new EventFiringWebDriver(driver);
+        // Now create object of EventListerHandler to register it with
+        // EventFiringWebDriver
+        eventListener = new WebEventListener();
+        listnerDriver.register(eventListener);
+        driver = listnerDriver;
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-       
-       driver.get(props.getProperty("home_URL"));
-    }
-    
-}
 
+        driver.get(props.getProperty("homeURL"));
+    }
+
+}

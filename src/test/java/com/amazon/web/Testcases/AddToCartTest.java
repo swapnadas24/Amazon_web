@@ -1,61 +1,58 @@
-package com.amazon.web.Testcases;
+package com.amazon.web.testcases;
 
+import com.amazon.web.pages.AddToCart;
+import com.amazon.web.base.Amazonbase;
+import com.amazon.web.pages.LoginPage;
+import com.amazon.web.pages.SearchItem;
 import java.io.IOException;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.amazon.web.base.Amazonbase;
-import com.amazon.web.pages.AddToCart;
-import com.amazon.web.pages.LoginPage;
-import com.amazon.web.pages.SearchItem;
-
-
 public class AddToCartTest extends Amazonbase {
+    LoginPage loginPage;
+    SearchItem searchItem;
+    AddToCart addToCart;
 
-    LoginPage login_Page;
-    SearchItem search_item;
-    AddToCart  add_To_cart;
+    public AddToCartTest() {
 
-    public AddToCartTest()
-    {
         super();
+
     }
 
     @BeforeTest
-    public void setUp() throws IOException
-    {
-      intialization();
+    public void setUp() throws IOException {
+
+        intialization();
+
     }
 
     @BeforeMethod
-    public void call_screens() 
-    {
-      
-      login_Page=new LoginPage();
-      login_Page.click_SignIn_Button();
-      login_Page.validate_Email_MobileNo_Password(props.getProperty("email_Mob"),
-                                 props.getProperty("password"));
+    public void call_screens() {
 
-      search_item = new SearchItem();
-      add_To_cart=search_item.SearchSamsungMobile(props.getProperty("SearchMobile"));
+        loginPage = new LoginPage();
+        loginPage.click_SignIn_Button();
+        loginPage.validate_Email_MobileNo_Password(props.getProperty("emailMob"), props.getProperty("password"));
+
+        searchItem = new SearchItem();
+        addToCart = searchItem.SearchSamsungMobile(props.getProperty("SearchMobile"));
+
     }
 
     @Test()
-    public void click_Mobile() throws InterruptedException
-    { 
-        add_To_cart.clickMobile();
-        add_To_cart.addItemTocart();     
+    public void click_Mobile() throws InterruptedException {
+
+        addToCart.clickMobile();
+        addToCart.addItemTocart();
+
     }
 
     @AfterMethod
-    public void quitScreen()
-    {
+    public void quitScreen() {
+
         driver.quit();
+
     }
 
-
-    
 }
