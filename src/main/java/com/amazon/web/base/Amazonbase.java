@@ -10,8 +10,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.amazon.web.util.TestUtil;
+import com.amazon.web.util.WebEventListener;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,6 +22,9 @@ public class Amazonbase {
     public static ChromeOptions option;
     public static Properties props;
     public static FileInputStream objfile;
+
+    public  static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
 
     public Amazonbase() 
     {
@@ -53,6 +58,14 @@ public class Amazonbase {
         driver = new ChromeDriver(option);
 
         }
+         
+        e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
+
+
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
