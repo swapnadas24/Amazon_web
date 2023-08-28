@@ -3,11 +3,9 @@ package com.amazon.web.pages;
 
 import com.amazon.web.base.Amazonbase;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.amazon.web.util.TestUtil;
 
 public class SearchItem extends Amazonbase {
 
@@ -38,11 +36,11 @@ public class SearchItem extends Amazonbase {
         return AmazonLogo.isDisplayed();
     }
 
-    public AddToCart SearchSamsungMobile(String SearchMob) {
+    public AddToCart SearchSamsungMobile(String SearchMob) throws InterruptedException {
 
         searchBar.sendKeys(SearchMob);
         SearchlistSize.isSelected();
-        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        Thread.sleep(5000);
 
         // select First name from the list
         List<WebElement> mobile = SamsungMobile;

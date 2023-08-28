@@ -1,4 +1,4 @@
-package com.amazon.web.extentreportlist;
+package com.amazon.web.extentReportList;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

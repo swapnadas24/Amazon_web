@@ -1,4 +1,4 @@
-package com.amazon.web.testcases;
+package com.amazon.web.Testcases;
 
 import com.amazon.web.pages.AddToCart;
 import com.amazon.web.base.Amazonbase;
@@ -22,14 +22,14 @@ public class AddToCartTest extends Amazonbase {
     }
 
     @BeforeTest
-    public void setUp() throws IOException {
+    public void setUp() throws IOException, InterruptedException {
 
         intialization();
 
     }
 
     @BeforeMethod
-    public void call_screens() {
+    public void call_screens() throws InterruptedException {
 
         loginPage = new LoginPage();
         loginPage.click_SignIn_Button();

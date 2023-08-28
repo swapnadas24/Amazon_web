@@ -1,4 +1,4 @@
-package com.amazon.web.testcases;
+package com.amazon.web.Testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.LoginPage;
@@ -17,13 +17,13 @@ public class LoginTest extends Amazonbase {
     }
 
     @BeforeMethod
-    public void setUp() throws IOException {
+    public void setUp() throws IOException, InterruptedException {
         intialization();
         loginPage = new LoginPage();
     }
 
     @Test
-    public void login_Page_Test() {
+    public void login_Page_Test() throws InterruptedException {
         loginPage.click_SignIn_Button();
         loginPage.validateSignPageTitle();
         loginPage.validate_Email_MobileNo_Password(props.getProperty("email_Mob"), props.getProperty("password"));

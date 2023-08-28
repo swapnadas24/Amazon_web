@@ -1,4 +1,4 @@
-package com.amazon.web.testcases;
+package com.amazon.web.Testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.AddToCart;
@@ -22,7 +22,7 @@ public class SearchItemTest extends Amazonbase {
     }
 
     @BeforeMethod
-    public void setUp() throws IOException {
+    public void setUp() throws IOException, InterruptedException {
 
         intialization();
         searchItem = new SearchItem();
@@ -45,7 +45,7 @@ public class SearchItemTest extends Amazonbase {
     }
 
     @Test(priority = 3)
-    public void searchedItemTest() {
+    public void searchedItemTest() throws InterruptedException {
 
         addToCart = searchItem.SearchSamsungMobile(props.getProperty("SearchMobile"));
 

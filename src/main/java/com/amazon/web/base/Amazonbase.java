@@ -5,26 +5,23 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-
-import com.amazon.web.util.TestUtil;
-import com.amazon.web.util.WebEventListener;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Amazonbase {
     public static WebDriver driver;
     public static ChromeOptions option;
+    public static SafariOptions option1;
     public static Properties props;
     public static FileInputStream objfile;
 
-    public static EventFiringWebDriver listnerDriver;
-    public static WebEventListener eventListener;
+
 
     public Amazonbase() {
 
@@ -43,7 +40,7 @@ public class Amazonbase {
 
     }
 
-    public static void intialization() throws IOException {
+    public static void intialization() throws IOException, InterruptedException {
 
         String browserName = props.getProperty("browser");
 
@@ -55,20 +52,18 @@ public class Amazonbase {
             option.setExperimentalOption("useAutomationExtension", false);
             driver = new ChromeDriver(option);
 
+        }else if(browserName.equals("safari")){
+          WebDriverManager.safaridriver().setup();
+          option1= new SafariOptions();
+          driver= new SafariDriver(option1);
+
         }
-
-        listnerDriver = new EventFiringWebDriver(driver);
-        // Now create object of EventListerHandler to register it with
-        // EventFiringWebDriver
-        eventListener = new WebEventListener();
-        listnerDriver.register(eventListener);
-        driver = listnerDriver;
-
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        Thread.sleep(10000);
 
         driver.get(props.getProperty("homeURL"));
     }
 
 }
+
