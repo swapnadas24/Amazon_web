@@ -14,17 +14,16 @@ public class AddToCart extends Amazonbase {
     @FindBy(xpath = "//input[@id='add-to-cart-button']")
     WebElement clickAddToCart;
 
-    @FindBy(id = "attach-view-cart-button-form")
-    WebElement clickCart;
-
     // initialize the page objects:
     public AddToCart() {
         PageFactory.initElements(driver, this);
     }
 
     // Actions
-    public void clickMobile() {
+    public void clickMobile() throws InterruptedException {
+        Thread.sleep(2000);
         firstMobile.click();
+        Thread.sleep(2000);
         String parentHandle = driver.getWindowHandle();
         for (String childHandle : driver.getWindowHandles()) {
             if (!parentHandle.equals(childHandle)) {
@@ -36,8 +35,7 @@ public class AddToCart extends Amazonbase {
     public void addItemTocart() throws InterruptedException {
 
         clickAddToCart.click();
-        Thread.sleep(2000);
-        clickCart.click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
+
     }
 }

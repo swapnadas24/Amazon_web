@@ -51,26 +51,31 @@
 <error line="37" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="37" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="38" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="41" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="43" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="43" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="44" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="45" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="47" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="49" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="49" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="49" column="56" severity="error" message="Name &apos;e_Id_mob&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="51" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="40" column="22" severity="error" message="&apos;3000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="42" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="44" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="44" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="45" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="46" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="48" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="50" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="50" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="50" column="56" severity="error" message="Name &apos;e_Id_mob&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
 <error line="52" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="53" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="54" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="56" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="59" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="60" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="61" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="63" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="64" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="65" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="54" column="20" severity="error" message="&apos;2000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="55" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="56" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="57" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="57" column="20" severity="error" message="&apos;2000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="59" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="62" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="63" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="64" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="66" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="67" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="68" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/pages/SearchItem.java">
 <error line="4" column="1" severity="error" message="&apos;import&apos; has more than 1 empty lines before." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
@@ -120,7 +125,7 @@
 <error line="57" column="18" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="58" column="11" severity="error" message="&apos;if&apos; child has incorrect indentation level 10, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="58" column="17" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="63" column="22" severity="error" message="&apos;5000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="63" column="22" severity="error" message="&apos;10000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/extentReportList/AmazonExtentReport.java">
 <error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.extentReportList&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>

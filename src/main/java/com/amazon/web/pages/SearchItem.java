@@ -39,8 +39,9 @@ public class SearchItem extends Amazonbase {
     public AddToCart SearchSamsungMobile(String SearchMob) throws InterruptedException {
 
         searchBar.sendKeys(SearchMob);
-        SearchlistSize.isSelected();
         Thread.sleep(5000);
+        SearchlistSize.isSelected();
+        Thread.sleep(7000);
 
         // select First name from the list
         List<WebElement> mobile = SamsungMobile;

@@ -20,39 +20,33 @@ public class AddToCartTest extends Amazonbase {
         super();
 
     }
-
     @BeforeTest
     public void setUp() throws IOException, InterruptedException {
 
         intialization();
 
     }
-
     @BeforeMethod
-    public void call_screens() throws InterruptedException {
+    public void call_screens() throws InterruptedException{
 
         loginPage = new LoginPage();
         loginPage.click_SignIn_Button();
-        loginPage.validate_Email_MobileNo_Password(props.getProperty("emailMob"), props.getProperty("password"));
+      
+        loginPage.validate_Email_MobileNo_Password(props.getProperty("email_Mob"), props.getProperty("password"));
 
         searchItem = new SearchItem();
         addToCart = searchItem.SearchSamsungMobile(props.getProperty("SearchMobile"));
-
     }
-
     @Test()
     public void click_Mobile() throws InterruptedException {
 
         addToCart.clickMobile();
         addToCart.addItemTocart();
-
     }
-
     @AfterMethod
     public void quitScreen() {
 
         driver.quit();
-
     }
 
 }

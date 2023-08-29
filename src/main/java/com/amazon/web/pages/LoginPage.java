@@ -37,7 +37,7 @@ public class LoginPage extends Amazonbase {
    public void click_SignIn_Button() throws InterruptedException {
      
         click_SignIn.click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
    }
 
@@ -51,10 +51,10 @@ public class LoginPage extends Amazonbase {
 
       enter_email_mobileNo.sendKeys(e_Id_mob);
       tab_continue.click();
-      Thread.sleep(2000);
+      Thread.sleep(3000);
       enter_password.sendKeys(pwd);
       tap_Signin_button.click();
-      Thread.sleep(2000);
+      Thread.sleep(3000);
 
    }
 
