@@ -7,10 +7,11 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+// Get TestUtil class.
 public class TestUtil extends Amazonbase {
-    
-        public static long PAGE_LOAD_TIMEOUT = 20;
-        public static long IMPLICIT_WAIT = 5;
+
+    public static long durationSeconds = 10;
+    public static long durationMilliSeconds = 5000;
 
     public static void takeScreenshotAtEndOfTest() throws IOException {
 

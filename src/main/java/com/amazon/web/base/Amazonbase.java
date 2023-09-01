@@ -3,6 +3,7 @@ package com.amazon.web.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
@@ -11,36 +12,38 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
-
+import com.amazon.web.util.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Amazonbase {
+
     public static WebDriver driver;
-    public static ChromeOptions option;
-    public static SafariOptions option1;
-    public static Properties props;
-    public static FileInputStream objfile;
-
-
+    private static ChromeOptions option;
+    private static SafariOptions option1;
+    protected static Properties props;
+    static FileInputStream objfile;
 
     public Amazonbase() {
 
         try {
             // Load the properties File
             props = new Properties();
-            FileInputStream objfile = new FileInputStream(System.getProperty("user.dir") +
-                    "/src/main/java/com/amazon/web/config/config.properties");
+            FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")
+            +  "/src/main/java/com/amazon/web/config/config.properties");
             props.load(objfile);
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
+            e.printStackTrace();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
     }
 
-    public static void intialization() throws IOException, InterruptedException {
+    public static void initialization() throws IOException, InterruptedException {
 
         String browserName = props.getProperty("browser");
 
@@ -52,18 +55,21 @@ public class Amazonbase {
             option.setExperimentalOption("useAutomationExtension", false);
             driver = new ChromeDriver(option);
 
-        }else if(browserName.equals("safari")){
-          WebDriverManager.safaridriver().setup();
-          option1= new SafariOptions();
-          driver= new SafariDriver(option1);
+        } else if(browserName.equals("safari")) {
+
+            WebDriverManager.safaridriver().setup();
+            option1 = new SafariOptions();
+            driver = new SafariDriver(option1);
 
         }
+
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        Thread.sleep(10000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.durationSeconds));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(TestUtil.durationMilliSeconds));
 
         driver.get(props.getProperty("homeURL"));
-    }
 
+    }
 }
 

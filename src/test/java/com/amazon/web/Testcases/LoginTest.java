@@ -1,4 +1,4 @@
-package com.amazon.web.Testcases;
+package com.amazon.web.testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.LoginPage;
@@ -10,23 +10,24 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends Amazonbase {
 
-    LoginPage loginPage;
-    
+    private LoginPage loginPage;
+
     public LoginTest() {
         super();
     }
 
     @BeforeMethod
     public void setUp() throws IOException, InterruptedException {
-        intialization();
+        initialization();
         loginPage = new LoginPage();
     }
 
     @Test
-    public void login_Page_Test() throws InterruptedException {
-        loginPage.click_SignIn_Button();
+    public void loginPageTest() throws InterruptedException {
+
+        loginPage.clickSignInButton();
         loginPage.validateSignPageTitle();
-        loginPage.validate_Email_MobileNo_Password(props.getProperty("email_Mob"), props.getProperty("password"));
+        loginPage.validateEmailMobileNoPassword(props.getProperty("emailMob"), props.getProperty("password"));
 
         boolean logo = loginPage.validateAmazonLogo();
         Assert.assertTrue(logo);

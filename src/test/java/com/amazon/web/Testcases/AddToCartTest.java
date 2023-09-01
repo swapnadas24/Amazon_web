@@ -1,7 +1,7 @@
-package com.amazon.web.Testcases;
+package com.amazon.web.testcases;
 
-import com.amazon.web.pages.AddToCart;
 import com.amazon.web.base.Amazonbase;
+import com.amazon.web.pages.AddToCart;
 import com.amazon.web.pages.LoginPage;
 import com.amazon.web.pages.SearchItem;
 import java.io.IOException;
@@ -11,38 +11,42 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class AddToCartTest extends Amazonbase {
-    LoginPage loginPage;
-    SearchItem searchItem;
-    AddToCart addToCart;
+    private LoginPage loginPage;
+    private SearchItem searchItem;
+    private AddToCart addToCart;
 
     public AddToCartTest() {
 
         super();
 
     }
+
     @BeforeTest
     public void setUp() throws IOException, InterruptedException {
 
-        intialization();
+        initialization();
 
     }
+
     @BeforeMethod
-    public void call_screens() throws InterruptedException{
+    public void call_screens() throws InterruptedException {
 
         loginPage = new LoginPage();
-        loginPage.click_SignIn_Button();
-      
-        loginPage.validate_Email_MobileNo_Password(props.getProperty("email_Mob"), props.getProperty("password"));
+        loginPage.clickSignInButton();
+
+        loginPage.validateEmailMobileNoPassword(props.getProperty("email_Mob"), props.getProperty("password"));
 
         searchItem = new SearchItem();
-        addToCart = searchItem.SearchSamsungMobile(props.getProperty("SearchMobile"));
+        addToCart = searchItem.searchSamsungMobile(props.getProperty("SearchMobile"));
     }
+
     @Test()
     public void click_Mobile() throws InterruptedException {
 
         addToCart.clickMobile();
         addToCart.addItemTocart();
     }
+
     @AfterMethod
     public void quitScreen() {
 

@@ -1,4 +1,4 @@
-package com.amazon.web.Testcases;
+package com.amazon.web.testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.AddToCart;
@@ -9,11 +9,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
 public class SearchItemTest extends Amazonbase {
 
-    SearchItem searchItem;
-    AddToCart addToCart;
+    private SearchItem searchItem;
+    protected AddToCart addToCart;
 
     public SearchItemTest() {
 
@@ -24,7 +23,7 @@ public class SearchItemTest extends Amazonbase {
     @BeforeMethod
     public void setUp() throws IOException, InterruptedException {
 
-        intialization();
+        initialization();
         searchItem = new SearchItem();
 
     }
@@ -35,7 +34,7 @@ public class SearchItemTest extends Amazonbase {
         String homePageTitle = searchItem.validateHomePageTitle();
         Assert.assertEquals(homePageTitle,
             "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
-    } 
+    }
 
     @Test(priority = 2)
     public void pageLogoTest() {
@@ -45,11 +44,11 @@ public class SearchItemTest extends Amazonbase {
     }
 
     @Test(priority = 3)
-    public void searchedItemTest() throws InterruptedException {
+    public AddToCart searchedItemTest() {
 
-        addToCart = searchItem.SearchSamsungMobile(props.getProperty("SearchMobile"));
+        return addToCart = searchItem.searchSamsungMobile(props.getProperty("SearchMobile"));
 
-    } 
+    }
 
     @AfterMethod
     public void quitScreen() {

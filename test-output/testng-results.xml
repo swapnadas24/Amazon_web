@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-01T06:31:42Z" name="Amazon Test Automation suite" finished-at="2023-09-01T06:33:29Z" duration-ms="106690">
+    <groups>
+    </groups>
+    <test started-at="2023-09-01T06:31:42Z" name="Amazon testcases" finished-at="2023-09-01T06:33:29Z" duration-ms="106690">
+      <class name="com.amazon.web.Testcases.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.web.Testcases.AddToCartTest@2b48a640]" started-at="2023-09-01T06:31:42Z" name="setUp" finished-at="2023-09-01T06:31:58Z" duration-ms="15413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="call_screens()[pri:0, instance:com.amazon.web.Testcases.AddToCartTest@2b48a640]" started-at="2023-09-01T06:31:58Z" name="call_screens" finished-at="2023-09-01T06:32:22Z" duration-ms="23716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call_screens -->
+        <test-method signature="click_Mobile()[pri:0, instance:com.amazon.web.Testcases.AddToCartTest@2b48a640]" started-at="2023-09-01T06:32:22Z" name="click_Mobile" finished-at="2023-09-01T06:32:35Z" duration-ms="12743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_Mobile -->
+        <test-method is-config="true" signature="quitScreen()[pri:0, instance:com.amazon.web.Testcases.AddToCartTest@2b48a640]" started-at="2023-09-01T06:32:35Z" name="quitScreen" finished-at="2023-09-01T06:32:35Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitScreen -->
+      </class> <!-- com.amazon.web.Testcases.AddToCartTest -->
+      <class name="com.amazon.web.Testcases.SearchItemTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:32:35Z" name="setUp" finished-at="2023-09-01T06:32:48Z" duration-ms="13735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="pageTitleTest()[pri:1, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:32:48Z" name="pageTitleTest" finished-at="2023-09-01T06:32:48Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTitleTest -->
+        <test-method is-config="true" signature="quitScreen()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:32:48Z" name="quitScreen" finished-at="2023-09-01T06:32:48Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitScreen -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:32:48Z" name="setUp" finished-at="2023-09-01T06:33:03Z" duration-ms="14621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="pageLogoTest()[pri:2, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:33:03Z" name="pageLogoTest" finished-at="2023-09-01T06:33:03Z" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageLogoTest -->
+        <test-method is-config="true" signature="quitScreen()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:33:03Z" name="quitScreen" finished-at="2023-09-01T06:33:03Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitScreen -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:33:03Z" name="setUp" finished-at="2023-09-01T06:33:17Z" duration-ms="13559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchedItemTest()[pri:3, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:33:17Z" name="searchedItemTest" finished-at="2023-09-01T06:33:29Z" duration-ms="12241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchedItemTest -->
+        <test-method is-config="true" signature="quitScreen()[pri:0, instance:com.amazon.web.Testcases.SearchItemTest@2053d869]" started-at="2023-09-01T06:33:29Z" name="quitScreen" finished-at="2023-09-01T06:33:29Z" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitScreen -->
+      </class> <!-- com.amazon.web.Testcases.SearchItemTest -->
+      <class name="com.amazon.web.Testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.web.Testcases.LoginTest@1e683a3e]" started-at="2023-09-01T06:31:58Z" name="setUp" finished-at="2023-09-01T06:31:58Z" duration-ms="232" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'Biranchis-MacBook-Pro.local', ip: 'fe80:0:0:0:83e:7af1:ee5:decf%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.4', java.version: '11.0.20'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'Biranchis-MacBook-Pro.local', ip: 'fe80:0:0:0:83e:7af1:ee5:decf%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.4', java.version: '11.0.20'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:86)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:82)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:60)
+at com.amazon.web.base.Amazonbase.intialization(Amazonbase.java:58)
+at com.amazon.web.Testcases.LoginTest.setUp(LoginTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login_Page_Test()[pri:0, instance:com.amazon.web.Testcases.LoginTest@1e683a3e]" started-at="2023-09-01T06:31:58Z" name="login_Page_Test" finished-at="2023-09-01T06:31:58Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'Biranchis-MacBook-Pro.local', ip: 'fe80:0:0:0:83e:7af1:ee5:decf%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.4', java.version: '11.0.20'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'Biranchis-MacBook-Pro.local', ip: 'fe80:0:0:0:83e:7af1:ee5:decf%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.4', java.version: '11.0.20'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:94)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:86)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:82)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:60)
+at com.amazon.web.base.Amazonbase.intialization(Amazonbase.java:58)
+at com.amazon.web.Testcases.LoginTest.setUp(LoginTest.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Page_Test -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.amazon.web.Testcases.LoginTest@1e683a3e]" started-at="2023-09-01T06:31:58Z" name="quit" finished-at="2023-09-01T06:31:58Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.amazon.web.Testcases.LoginTest -->
+    </test> <!-- Amazon testcases -->
+  </suite> <!-- Amazon Test Automation suite -->
+</testng-results>

@@ -11,16 +11,16 @@ public class SearchItem extends Amazonbase {
 
     // Page Factory -OR:
     @FindBy(id = "twotabsearchtextbox")
-    WebElement searchBar;
+    private WebElement searchBar;
 
     @FindBy(id = "nav-flyout-searchAjax")
-    WebElement SearchlistSize;
+    private WebElement searchListSize;
 
     @FindBy(xpath = "//div[@aria-label='samsung mobile']")
-    List<WebElement> SamsungMobile;
+    private List<WebElement> samsungMobile;
 
     @FindBy(id = "nav-logo-sprites")
-    WebElement AmazonLogo;
+    private WebElement amazonLogo;
 
     // initialize the page objects:
     public SearchItem() {
@@ -33,18 +33,16 @@ public class SearchItem extends Amazonbase {
     }
 
     public boolean validateAmazonLogo() {
-        return AmazonLogo.isDisplayed();
+        return amazonLogo.isDisplayed();
     }
 
-    public AddToCart SearchSamsungMobile(String SearchMob) throws InterruptedException {
+    public AddToCart searchSamsungMobile(String searchMob) {
 
-        searchBar.sendKeys(SearchMob);
-        Thread.sleep(5000);
-        SearchlistSize.isSelected();
-        Thread.sleep(7000);
+        searchBar.sendKeys(searchMob);
+        searchListSize.isSelected();
 
         // select First name from the list
-        List<WebElement> mobile = SamsungMobile;
+        List<WebElement> mobile = samsungMobile;
         for (int i = 0; i <= mobile.size();) {
             mobile.get(i).click();
             break;

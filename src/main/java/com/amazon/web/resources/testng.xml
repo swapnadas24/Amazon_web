@@ -9,8 +9,9 @@
 	<test name="Amazon testcases">
 		<classes>
 			<class name="com.amazon.web.Testcases.LoginTest"></class>
-			<class name="com.amazon.web.Testcases.SearchItemTest"></class>
 			<class name="com.amazon.web.Testcases.AddToCartTest"></class>
+			<class name="com.amazon.web.Testcases.SearchItemTest"></class>
+
 		</classes>
 	</test>
 </suite>

@@ -1,201 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/util/TestUtil.java">
-<error line="10" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="11" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="12" column="9" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="12" column="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="12" column="28" severity="error" message="Name &apos;PAGE_LOAD_TIMEOUT&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
-<error line="12" column="28" severity="error" message="Variable &apos;PAGE_LOAD_TIMEOUT&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="13" column="9" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="13" column="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="13" column="28" severity="error" message="Name &apos;IMPLICIT_WAIT&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
-<error line="13" column="28" severity="error" message="Variable &apos;IMPLICIT_WAIT&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="15" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="11" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="13" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="13" column="24" severity="error" message="Variable &apos;durationSeconds&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="14" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="14" column="24" severity="error" message="Variable &apos;durationMilliSeconds&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="16" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/pages/AddToCart.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="8" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="12" column="16" severity="error" message="Variable &apos;firstMobile&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="15" column="16" severity="error" message="Variable &apos;clickAddToCart&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="16" severity="error" message="Variable &apos;clickCart&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="26" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="36" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="39" column="22" severity="error" message="&apos;2000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="41" column="22" severity="error" message="&apos;3000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="23" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/pages/LoginPage.java">
 <error line="8" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="12" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="13" column="18" severity="error" message="Name &apos;click_SignIn&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="13" column="18" severity="error" message="Variable &apos;click_SignIn&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="15" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="16" column="18" severity="error" message="Name &apos;enter_email_mobileNo&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="16" column="18" severity="error" message="Variable &apos;enter_email_mobileNo&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="19" column="18" severity="error" message="Name &apos;tab_continue&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="19" column="18" severity="error" message="Variable &apos;tab_continue&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="21" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="22" column="18" severity="error" message="Name &apos;enter_password&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="22" column="18" severity="error" message="Variable &apos;enter_password&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="24" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="25" column="18" severity="error" message="Name &apos;tap_Signin_button&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="25" column="18" severity="error" message="Variable &apos;tap_Signin_button&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="27" column="7" severity="error" message="&apos;member def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="28" column="18" severity="error" message="Name &apos;AmazonLogo&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="28" column="18" severity="error" message="Variable &apos;AmazonLogo&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="31" column="7" severity="error" message="&apos;ctor def modifier&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="31" column="7" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="33" column="11" severity="error" message="&apos;ctor def&apos; child has incorrect indentation level 10, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="35" column="7" severity="error" message="&apos;ctor def rcurly&apos; has incorrect indentation level 6, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="37" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="38" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="40" column="22" severity="error" message="&apos;3000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="42" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="44" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="44" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="45" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="46" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="48" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="50" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="50" column="4" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="50" column="56" severity="error" message="Name &apos;e_Id_mob&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="52" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="53" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="54" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="54" column="20" severity="error" message="&apos;2000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="55" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="56" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" column="20" severity="error" message="&apos;2000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="59" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="62" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="63" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="64" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="66" column="4" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="67" column="7" severity="error" message="&apos;method def&apos; child has incorrect indentation level 6, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="68" column="4" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="30" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="36" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="42" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="44" column="8" severity="error" message="&apos;method def&apos; child has incorrect indentation level 7, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="48" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="57" column="4" severity="error" message="Comment has incorrect indentation level 3, expected is 4, indentation should be the same level as line 58." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
+<error line="58" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="64" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/pages/SearchItem.java">
 <error line="4" column="1" severity="error" message="&apos;import&apos; has more than 1 empty lines before." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
 <error line="10" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="14" column="16" severity="error" message="Variable &apos;searchBar&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="17" column="16" severity="error" message="Name &apos;SearchlistSize&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="17" column="16" severity="error" message="Variable &apos;SearchlistSize&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="20" column="22" severity="error" message="Name &apos;SamsungMobile&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="20" column="22" severity="error" message="Variable &apos;SamsungMobile&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="23" column="16" severity="error" message="Name &apos;AmazonLogo&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="23" column="16" severity="error" message="Variable &apos;AmazonLogo&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="39" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="39" column="22" severity="error" message="Method name &apos;SearchSamsungMobile&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9_]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="39" column="49" severity="error" message="Name &apos;SearchMob&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="43" column="22" severity="error" message="&apos;5000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 <file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/main/java/com/amazon/web/base/Amazonbase.java">
-<error line="9" column="1" severity="error" message="Extra separation in import group before &apos;org.openqa.selenium.WebDriver&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
-<error line="15" column="1" severity="error" message="Extra separation in import group before &apos;io.github.bonigarcia.wdm.WebDriverManager&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
-<error line="15" column="1" severity="error" message="Wrong order for &apos;io.github.bonigarcia.wdm.WebDriverManager&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
-<error line="17" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="17" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
-<error line="18" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="18" column="29" severity="error" message="Variable &apos;driver&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="19" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="19" column="33" severity="error" message="Variable &apos;option&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="10" column="1" severity="error" message="Extra separation in import group before &apos;org.openqa.selenium.WebDriver&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="15" column="1" severity="error" message="Wrong order for &apos;com.amazon.web.util.TestUtil&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="18" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="18" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
 <error line="20" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="20" column="33" severity="error" message="Variable &apos;option1&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="21" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="21" column="30" severity="error" message="Variable &apos;props&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="22" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
-<error line="22" column="35" severity="error" message="Variable &apos;objfile&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="26" column="5" severity="error" message="&apos;CTOR_DEF&apos; has more than 1 empty lines before." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="20" column="29" severity="error" message="Variable &apos;driver&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="23" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="23" column="5" severity="error" message="Variable access definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="23" column="33" severity="error" message="Variable &apos;props&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="24" column="5" severity="error" message="Variable access definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="24" column="28" severity="error" message="Variable &apos;objfile&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="26" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="31" column="29" severity="error" message="&apos;objfile&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="31" column="90" severity="error" message="&apos;+&apos; should be on a new line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
-<error line="37" column="11" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
-<error line="43" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="47" column="31" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="55" column="9" severity="error" message="&apos;}&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="55" column="10" severity="error" message="&apos;else&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="55" column="15" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
-<error line="55" column="36" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
-<error line="55" column="47" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="56" column="11" severity="error" message="&apos;if&apos; child has incorrect indentation level 10, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" column="11" severity="error" message="&apos;if&apos; child has incorrect indentation level 10, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" column="18" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="58" column="11" severity="error" message="&apos;if&apos; child has incorrect indentation level 10, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="58" column="17" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
-<error line="63" column="22" severity="error" message="&apos;10000&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="32" column="13" severity="error" message="&apos;+&apos; has incorrect indentation level 12, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="39" column="11" severity="error" message="Catching &apos;Exception&apos; is not allowed." source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="46" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="50" column="31" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="58" column="16" severity="error" message="&apos;if&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="58" column="37" severity="error" message="String literal expressions should be on the left side of an equals comparison." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/extentReportList/AmazonExtentReport.java">
-<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.extentReportList&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/extent_report_list/AmazonExtentReport.java">
+<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.extent_report_list&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="19" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="22" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="22" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="22" column="104" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
-<error line="27" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="32" column="21" severity="error" message="&apos;for&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="34" column="25" severity="error" message="&apos;for&apos; child has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="35" column="25" severity="error" message="&apos;for&apos; child has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="36" column="25" severity="error" message="&apos;for&apos; child has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="38" column="17" severity="error" message="&apos;for rcurly&apos; has incorrect indentation level 16, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="40" column="25" severity="error" message="&apos;method def&apos; child has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="41" column="25" severity="error" message="&apos;method def&apos; child has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="42" column="17" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 16, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="43" column="17" severity="error" message="&apos;METHOD_DEF&apos; should be separated from previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="43" column="17" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 16, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="44" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="45" column="25" severity="error" message="&apos;method def&apos; child has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="47" column="25" severity="error" message="&apos;if&apos; has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="48" column="33" severity="error" message="&apos;for&apos; has incorrect indentation level 32, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="49" column="41" severity="error" message="&apos;for&apos; child has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="51" column="41" severity="error" message="&apos;for&apos; child has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="52" column="41" severity="error" message="&apos;for&apos; child has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="54" column="41" severity="error" message="&apos;for&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="54" column="41" severity="error" message="&apos;for&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="57" column="41" severity="error" message="&apos;if&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="58" column="49" severity="error" message="&apos;if&apos; child has incorrect indentation level 48, expected level should be 20." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="59" column="41" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="60" column="49" severity="error" message="&apos;else&apos; child has incorrect indentation level 48, expected level should be 20." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="62" column="41" severity="error" message="&apos;else rcurly&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="64" column="41" severity="error" message="&apos;for&apos; child has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="65" column="33" severity="error" message="&apos;for rcurly&apos; has incorrect indentation level 32, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="66" column="25" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 24, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="67" column="17" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 16, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="69" column="9" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="71" column="17" severity="error" message="&apos;method def&apos; child has incorrect indentation level 16, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="72" column="17" severity="error" message="&apos;method def&apos; child has incorrect indentation level 16, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="73" column="17" severity="error" message="&apos;method def&apos; child has incorrect indentation level 16, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="23" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="25" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="40" column="12" severity="error" message="&apos;for rcurly&apos; has incorrect indentation level 11, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="46" column="3" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 2, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="48" column="1" severity="error" message="&apos;method def modifier&apos; has incorrect indentation level 0, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="52" column="17" severity="error" message="&apos;if&apos; has incorrect indentation level 16, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="54" column="9" severity="error" message="&apos;for&apos; has incorrect indentation level 8, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="61" column="25" severity="error" message="&apos;for&apos; has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="63" column="33" severity="error" message="&apos;for&apos; child has incorrect indentation level 32, expected level should be 20." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="65" column="25" severity="error" message="&apos;for rcurly&apos; has incorrect indentation level 24, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="67" column="41" severity="error" message="&apos;if&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="69" column="49" severity="error" message="&apos;if&apos; child has incorrect indentation level 48, expected level should be 20." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="71" column="41" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="71" column="41" severity="error" message="&apos;}&apos; at column 6 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="72" column="41" severity="error" message="&apos;else&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="74" column="49" severity="error" message="&apos;else&apos; child has incorrect indentation level 48, expected level should be 20." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="74" column="107" severity="error" message="&apos;+&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="76" column="41" severity="error" message="&apos;else rcurly&apos; has incorrect indentation level 40, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="78" column="9" severity="error" message="&apos;for&apos; child has incorrect indentation level 8, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="80" column="25" severity="error" message="&apos;for rcurly&apos; has incorrect indentation level 24, expected level should be 12." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="81" column="17" severity="error" message="&apos;if rcurly&apos; has incorrect indentation level 16, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="82" column="9" severity="error" message="&apos;method def rcurly&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/LoginTest.java">
-<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/LoginTest.java">
 <error line="11" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="13" column="15" severity="error" message="Variable &apos;loginPage&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="14" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/AddToCartTest.java">
-<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
-<error line="4" column="1" severity="error" message="Wrong order for &apos;com.amazon.web.base.Amazonbase&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/AddToCartTest.java">
 <error line="13" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="14" column="15" severity="error" message="Variable &apos;loginPage&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="15" column="16" severity="error" message="Variable &apos;searchItem&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="16" column="15" severity="error" message="Variable &apos;addToCart&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="18" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="24" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="31" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="51" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/SearchItemTest.java">
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/SearchItemTest.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
-<error line="13" column="1" severity="error" message="&apos;CLASS_DEF&apos; has more than 1 empty lines before." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
-<error line="13" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="15" column="16" severity="error" message="Variable &apos;searchItem&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="16" column="15" severity="error" message="Variable &apos;addToCart&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="24" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="38" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="52" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="54" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="12" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="15" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="15" column="5" severity="error" message="Variable access definition in wrong order." source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="15" column="25" severity="error" message="Variable &apos;addToCart&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="17" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="23" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="49" column="26" severity="error" message="Inner assignments should be avoided." source="com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"/>
+<error line="53" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 </checkstyle>

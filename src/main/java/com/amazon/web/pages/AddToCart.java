@@ -9,10 +9,10 @@ public class AddToCart extends Amazonbase {
 
     // Page Factory - OR:
     @FindBy(xpath = "//img[@class='s-image']")
-    WebElement firstMobile;
+    private WebElement firstMobile;
 
     @FindBy(xpath = "//input[@id='add-to-cart-button']")
-    WebElement clickAddToCart;
+    private WebElement clickAddToCart;
 
     // initialize the page objects:
     public AddToCart() {
@@ -20,22 +20,21 @@ public class AddToCart extends Amazonbase {
     }
 
     // Actions
-    public void clickMobile() throws InterruptedException {
-        Thread.sleep(2000);
+    public void clickMobile() {
+
         firstMobile.click();
-        Thread.sleep(2000);
         String parentHandle = driver.getWindowHandle();
         for (String childHandle : driver.getWindowHandles()) {
             if (!parentHandle.equals(childHandle)) {
+
                 driver.switchTo().window(childHandle);
+
             }
         }
     }
 
-    public void addItemTocart() throws InterruptedException {
+    public void addItemTocart() {
 
         clickAddToCart.click();
-        Thread.sleep(5000);
-
     }
 }
