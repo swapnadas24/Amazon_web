@@ -12,7 +12,10 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "cSpell.words": [
         "Amazonbase",
+        "checkstyle",
         "enteremailmobile",
+        "extentreportlist",
+        "javadocmethod",
         "objfile",
         "Signin",
         "testcases",

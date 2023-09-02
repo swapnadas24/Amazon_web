@@ -41,7 +41,7 @@ public class LoginPage extends Amazonbase {
 
     public String validateSignPageTitle() {
 
-       return driver.getTitle();
+        return driver.getTitle();
 
     }
 
@@ -54,7 +54,7 @@ public class LoginPage extends Amazonbase {
 
     }
 
-   // Actions
+    // Actions
     public String validateHomePageTitle() {
 
         return driver.getTitle();

@@ -1,25 +1,24 @@
 package com.amazon.web.base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import com.amazon.web.util.TestUtil;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
-import com.amazon.web.util.TestUtil;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Amazonbase {
 
-    public static WebDriver driver;
-    private static ChromeOptions option;
-    private static SafariOptions option1;
+    protected static WebDriver driver;
+    static ChromeOptions option;
+    static SafariOptions option1;
     protected static Properties props;
     static FileInputStream objfile;
 
@@ -29,14 +28,14 @@ public class Amazonbase {
             // Load the properties File
             props = new Properties();
             FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")
-            +  "/src/main/java/com/amazon/web/config/config.properties");
+                +  "/src/main/java/com/amazon/web/config/config.properties");
             props.load(objfile);
 
         } catch (FileNotFoundException e) {
 
             e.printStackTrace();
 
-        } catch (Exception e) {
+        } catch (IOException e) {
 
             e.printStackTrace();
 
@@ -48,6 +47,7 @@ public class Amazonbase {
         String browserName = props.getProperty("browser");
 
         if (browserName.equals("chrome")) {
+
             WebDriverManager.chromedriver().setup();
             option = new ChromeOptions();
             // To stop unwanted pop-up of chrome browser
@@ -55,7 +55,7 @@ public class Amazonbase {
             option.setExperimentalOption("useAutomationExtension", false);
             driver = new ChromeDriver(option);
 
-        } else if(browserName.equals("safari")) {
+        } else if (browserName.equals("safari")) {
 
             WebDriverManager.safaridriver().setup();
             option1 = new SafariOptions();

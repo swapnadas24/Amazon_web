@@ -1,6 +1,5 @@
 package com.amazon.web.pages;
 
-
 import com.amazon.web.base.Amazonbase;
 import java.util.List;
 import org.openqa.selenium.WebElement;

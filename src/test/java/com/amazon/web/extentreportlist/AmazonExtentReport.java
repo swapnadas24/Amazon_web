@@ -1,4 +1,4 @@
-package com.amazon.web.extent_report_list;
+package com.amazon.web.extentreportlist;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -22,8 +22,7 @@ public class AmazonExtentReport implements IReporter {
 
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
-	extent = new ExtentReports(outputDirectory + File.separator
-		+ "AmazonExtent.html", true);
+	extent = new ExtentReports(outputDirectory + File.separator + "AmazonExtent.html", true);
 
 	for (ISuite suite : suites) {
 
@@ -37,49 +36,50 @@ public class AmazonExtentReport implements IReporter {
 		buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
 		buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
 
-	   }
+	    }
 	}
 
 	extent.flush();
 	extent.close();
 
-  }
+    }
 
-private void buildTestNodes(IResultMap tests, LogStatus status) {
+    private void buildTestNodes(IResultMap tests, LogStatus status) {
 
 	ExtentTest test;
 
-		if (tests.size() > 0) {
+        if (tests.size() > 0) {
 
-	for (ITestResult result : tests.getAllResults()) {
+	    for (ITestResult result : tests.getAllResults()) {
 
-		test = extent.startTest(result.getMethod().getMethodName());
+	        test = extent.startTest(result.getMethod().getMethodName());
 
-		test.setStartedTime(getTime(result.getStartMillis()));
-		test.setEndedTime(getTime(result.getEndMillis()));
+	        test.setStartedTime(getTime(result.getStartMillis()));
+	        test.setEndedTime(getTime(result.getEndMillis()));
 
-			for (String group : result.getMethod().getGroups()) {
+	        for (String group : result.getMethod().getGroups()) {
 
-				test.assignCategory(group);
+		    test.assignCategory(group);
 
-			}
+	        }
 
-					if (result.getThrowable() != null) {
+	        if (result.getThrowable() != null) {
 
-						test.log(status, result.getThrowable());
+	            test.log(status, result.getThrowable());
 
-					}
-					else {
+	        } else {
 
-						test.log(status, "Test " + status.toString().toLowerCase()+ "ed");
+	            test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 
-					}
+	        }
 
-	extent.endTest(test);
+	        extent.endTest(test);
 
-			}
-		}
+	    }
+
 	}
+
+    }
 
     private Date getTime(long millis) {
 

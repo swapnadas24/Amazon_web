@@ -1,7 +1,6 @@
 package com.amazon.web.testcases;
 
 import com.amazon.web.base.Amazonbase;
-import com.amazon.web.pages.AddToCart;
 import com.amazon.web.pages.SearchItem;
 import java.io.IOException;
 import org.testng.Assert;
@@ -12,7 +11,6 @@ import org.testng.annotations.Test;
 public class SearchItemTest extends Amazonbase {
 
     private SearchItem searchItem;
-    protected AddToCart addToCart;
 
     public SearchItemTest() {
 
@@ -44,9 +42,9 @@ public class SearchItemTest extends Amazonbase {
     }
 
     @Test(priority = 3)
-    public AddToCart searchedItemTest() {
+    public void searchedItemTest() {
 
-        return addToCart = searchItem.searchSamsungMobile(props.getProperty("SearchMobile"));
+        searchItem.searchSamsungMobile(props.getProperty("SearchMobile"));
 
     }
 
