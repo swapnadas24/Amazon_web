@@ -49,17 +49,20 @@
 <error line="23" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="25" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/LoginTest.java">
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/LoginTest.java">
+<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="11" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/AddToCartTest.java">
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/AddToCartTest.java">
+<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="13" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="18" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="24" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="31" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/testcases/SearchItemTest.java">
+<file name="/Users/biranchiranjanparida/Documents/Swapna/Amazon_web/src/test/java/com/amazon/web/Testcases/SearchItemTest.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="9" severity="error" message="Name &apos;com.amazon.web.Testcases&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="11" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="15" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="21" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>

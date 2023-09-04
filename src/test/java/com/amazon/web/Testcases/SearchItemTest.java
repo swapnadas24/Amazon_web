@@ -1,4 +1,4 @@
-package com.amazon.web.testcases;
+package com.amazon.web.Testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.SearchItem;
