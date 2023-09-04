@@ -26,6 +26,7 @@ public class LoginTest extends Amazonbase {
     public void loginPageTest() throws InterruptedException {
 
         loginPage.clickSignInButton();
+        Thread.sleep(3000);
         loginPage.validateSignPageTitle();
         loginPage.validateEmailMobileNoPassword(props.getProperty("emailMob"), props.getProperty("password"));
 

@@ -1,7 +1,7 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "maven.excludedFolders": [
-    
+
 
         "**/.*",
         "**/node_modules",
@@ -20,6 +20,9 @@
         "Signin",
         "testcases",
         "Tocart",
-        "twotabsearchtextbox"
-    ]
+        "twotabsearchtextbox",
+        "userprojectsettings"
+    ],
+    "maven.executable.preferMavenWrapper": true,
+    "maven.view": "flat"
 }

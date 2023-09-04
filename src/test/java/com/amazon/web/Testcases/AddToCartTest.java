@@ -41,7 +41,7 @@ public class AddToCartTest extends Amazonbase {
     }
 
     @Test()
-    public void click_Mobile() throws InterruptedException {
+    public void click_Mobile() {
 
         addToCart.clickMobile();
         addToCart.addItemTocart();

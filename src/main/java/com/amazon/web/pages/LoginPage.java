@@ -1,6 +1,10 @@
 package com.amazon.web.pages;
 
 import com.amazon.web.base.Amazonbase;
+import com.amazon.web.util.TestUtil;
+
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -36,6 +40,7 @@ public class LoginPage extends Amazonbase {
     public void clickSignInButton() {
 
         clickSignIn.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.durationSeconds));
 
     }
 
@@ -49,8 +54,10 @@ public class LoginPage extends Amazonbase {
 
         enteremailmobileNo.sendKeys(eIdMob);
         tabContinue.click();
+        Thread.sleep(5000);
         enterPassword.sendKeys(pwd);
         tapSigninButton.click();
+        Thread.sleep(3000);
 
     }
 
