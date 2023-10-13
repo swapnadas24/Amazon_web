@@ -2,7 +2,6 @@ package com.amazon.web.Testcases;
 
 import com.amazon.web.base.Amazonbase;
 import com.amazon.web.pages.SearchItem;
-import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +18,7 @@ public class SearchItemTest extends Amazonbase {
     }
 
     @BeforeMethod
-    public void setUp() throws IOException, InterruptedException {
+    public void setUp() {
 
         initialization();
         searchItem = new SearchItem();
@@ -31,7 +30,7 @@ public class SearchItemTest extends Amazonbase {
 
         String homePageTitle = searchItem.validateHomePageTitle();
         Assert.assertEquals(homePageTitle,
-            "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+                "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
     }
 
     @Test(priority = 2)
